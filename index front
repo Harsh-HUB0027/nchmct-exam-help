@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NCHMCT Student Help</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<meta name="description" content="Professional NCHMCT Student Help – Courses, Syllabus, Internships, Careers Abroad">
+<meta name="keywords" content="Hotel Management, NCHMCT, Student Help, Internship, Career Abroad, Syllabus, Mindmaps">
+<meta name="robots" content="index, follow">
+<style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Navbar -->
+<nav class="fixed w-full bg-white shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-red-600">NCHMCT Help</h1>
+    <ul class="flex space-x-4 items-center">
+      <li><a href="#gallery" class="hover:text-red-600">Gallery</a></li>
+      <li><a href="#courses" class="hover:text-red-600">Courses</a></li>
+      <li><a href="#syllabus" class="hover:text-red-600">Syllabus</a></li>
+      <li><a href="#internship" class="hover:text-red-600">Internships</a></li>
+      <li><a href="#career" class="hover:text-red-600">Career Roadmap</a></li>
+      <li>
+        <a href="https://t.me/+JPFyEztvXDE5OGVl" target="_blank" class="flex items-center bg-blue-500 text-white px-3 py-2 rounded-full hover:bg-blue-600">
+          <img src="assets/telegram_icon.svg" alt="Telegram" class="w-6 h-6 mr-2">
+          Join Telegram
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="h-screen flex flex-col justify-center items-center bg-cover bg-center" style="background-image:url('images/hero_bg.jpg');">
+  <div class="bg-black bg-opacity-50 p-8 rounded-xl text-center text-white">
+    <h2 class="text-4xl font-bold mb-4">Kickstart Your Hospitality Career</h2>
+    <p class="mb-6">Explore syllabus, courses, institutes, global internships and career opportunities abroad.</p>
+    <a href="#courses" class="bg-red-600 px-6 py-3 rounded-xl shadow-lg hover:bg-red-700">Explore Courses</a>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Gallery</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <img src="images/student_1.jpg" alt="Student 1" class="rounded-lg shadow-md w-full h-64 object-cover">
+      <img src="images/student_2.jpg" alt="Student 2" class="rounded-lg shadow-md w-full h-64 object-cover">
+      <img src="images/food_1.jpg" alt="Food 1" class="rounded-lg shadow-md w-full h-64 object-cover">
+      <img src="images/food_2.jpg" alt="Food 2" class="rounded-lg shadow-md w-full h-64 object-cover">
+      <!-- Add more images here -->
+    </div>
+  </div>
+</section>
+
+<!-- Courses & Fees Section -->
+<section id="courses" class="py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Courses & Fees</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h4 class="text-xl font-bold mb-2">B.Sc. Hospitality & Hotel Administration</h4>
+        <p>Duration: 3 years</p>
+        <p>Eligibility: 12th pass, 50% marks</p>
+        <p>Fees: ₹50,000–2,00,000/yr</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h4 class="text-xl font-bold mb-2">Diploma in Hotel Management</h4>
+        <p>Duration: 1-2 years</p>
+        <p>Eligibility: 12th pass</p>
+        <p>Fees: ₹30,000–1,00,000/yr</p>
+      </div>
+      <!-- Add more courses as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Syllabus Section -->
+<section id="syllabus" class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Syllabus</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="pdfs/syllabus_sem1.pdf" target="_blank">
+        <img src="images/mindmap_1.jpg" alt="Semester 1" class="rounded-lg shadow-md w-full h-64 object-cover">
+      </a>
+      <a href="pdfs/syllabus_sem2.pdf" target="_blank">
+        <img src="images/mindmap_2.jpg" alt="Semester 2" class="rounded-lg shadow-md w-full h-64 object-cover">
+      </a>
+      <!-- Add more semester PDFs as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Internship Section -->
+<section id="internship" class="py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Internship Roadmap</h2>
+    <img src="images/mindmap_3.jpg" alt="Internship Mindmap" class="w-full rounded-lg shadow-md">
+  </div>
+</section>
+
+<!-- Career Roadmap Section -->
+<section id="career" class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10">Career Roadmap</h2>
+    <img src="images/mindmap_2.jpg" alt="Career Mindmap" class="w-full rounded-lg shadow-md">
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-6 text-center">
+  <p>© 2025 NCHMCT Student Help | Designed for students</p>
+  <a href="https://t.me/+JPFyEztvXDE5OGVl" target="_blank" class="inline-flex items-center mt-2 bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600">
+    <img src="assets/telegram_icon.svg" alt="Telegram" class="w-5 h-5 mr-2">
+    Join our Telegram Group
+  </a>
+</footer>
+
+</body>
+</html>
