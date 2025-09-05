@@ -1,133 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NCHMCT Exam Preparation, Books, Syllabus, Exam Pattern, Guidance">
-  <title>NCHMCT Exam Help - Developer Harsh</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NCHMCT Exam Help | Student Guide</title>
+  <meta name="description" content="NCHMCT Exam Help – Detailed syllabus, books, colleges, fees, hostels, placements, and counselling for hotel management aspirants." />
+  <meta name="keywords" content="NCHMCT JEE, Hotel Management, IHM Colleges, NCHMCT Exam Help, Syllabus, Books, Fees, Placements, Hostel" />
+  <meta property="og:title" content="NCHMCT Exam Help" />
+  <meta property="og:description" content="Detailed guide for NCHMCT exam prep: syllabus, books, colleges, fees, placements, hostel info, and counselling." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="logo">
-        <img src="logo.png" alt="NCHMCT Logo">
-        <h1>NCHMCT Exam Help</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#syllabus">Syllabus</a></li>
-          <li><a href="#books">Books</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#counselling">Counselling</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+<body class="font-['Inter',sans-serif] text-gray-800">
+  <!-- Navbar -->
+  <header class="fixed w-full z-50 navbar bg-white/60 backdrop-blur-md shadow-sm transition">
+    <nav class="flex items-center justify-between px-4 md:px-6 py-3 max-w-7xl mx-auto">
+      <a href="#home" class="text-xl md:text-2xl font-bold">NCHMCT Help</a>
+      <ul class="hidden md:flex items-center gap-6 font-medium">
+        <li><a href="#home" class="navlink">Home</a></li>
+        <li><a href="#syllabus" class="navlink">Syllabus</a></li>
+        <li><a href="#books" class="navlink">Books</a></li>
+        <li><a href="#colleges" class="navlink">Colleges</a></li>
+        <li><a href="#gallery" class="navlink">Gallery</a></li>
+        <li><a href="#contact" class="navlink">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden text-2xl" aria-label="Open menu">☰</button>
+    </nav>
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md px-4 py-3 space-y-2">
+      <a href="#home" class="mobilelink">Home</a>
+      <a href="#syllabus" class="mobilelink">Syllabus</a>
+      <a href="#books" class="mobilelink">Books</a>
+      <a href="#colleges" class="mobilelink">Colleges</a>
+      <a href="#gallery" class="mobilelink">Gallery</a>
+      <a href="#contact" class="mobilelink">Contact</a>
     </div>
   </header>
 
-  <!-- Home Section -->
-  <section id="home" class="home-section">
-    <div class="container home-content">
-      <h2>Welcome to NCHMCT Exam Help</h2>
-      <p>Free resources, guidance, books, syllabus, exam pattern and counselling for students.</p>
-      <a href="#contact" class="btn">Contact via Telegram</a>
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center bg-cover bg-center relative"
+           style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600&auto=format&fit=crop');">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 p-8 md:p-12 rounded-2xl text-white">
+      <h1 class="text-4xl md:text-6xl font-extrabold drop-shadow mb-4 animate-fadeInUp">NCHMCT Exam Help</h1>
+      <p class="max-w-2xl mx-auto mb-6 md:mb-8 text-lg md:text-xl opacity-90">Your one-stop guide for Hotel Management exam preparation.</p>
+      <div class="flex gap-3 justify-center">
+        <a href="https://t.me/yourtelegram" class="btn-primary">Get Counselling on Telegram</a>
+        <a href="#colleges" class="btn-outline">Explore IHM Colleges</a>
+      </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="container">
-      <h2>About Developer Harsh</h2>
-      <p>I provide complete guidance for NCHMCT exam preparation, books, syllabus, courses, and counselling support for students aiming to succeed in Hotel Management.</p>
-    </div>
-  </section>
-
-  <!-- Syllabus Section -->
-  <section id="syllabus" class="syllabus-section">
-    <div class="container">
-      <h2>Exam Syllabus & Pattern</h2>
-      <p>The NCHMCT exam covers subjects like:</p>
-      <ul>
-        <li>English Language & Comprehension</li>
-        <li>General Knowledge & Current Affairs</li>
-        <li>Reasoning & Analytical Ability</li>
-        <li>Numerical Ability & Aptitude</li>
-        <li>Scientific Aptitude</li>
+  <!-- Syllabus -->
+  <section id="syllabus" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="section-title">Detailed Exam Syllabus</h2>
+      <p class="mb-4">The NCHMCT JEE consists of 200 questions divided into 5 sections:</p>
+      <ul class="list-disc ml-6 space-y-2">
+        <li><strong>English Language:</strong> Reading comprehension, grammar, vocabulary, para jumbles, cloze test, error spotting, idioms & phrases.</li>
+        <li><strong>Reasoning & Logical Deduction:</strong> Series, coding–decoding, blood relations, directions, syllogisms, analogies, puzzles.</li>
+        <li><strong>Numerical Ability & Analytical Aptitude:</strong> Percentages, profit & loss, averages, ratios, time–speed–distance, simple/compound interest, mensuration, data interpretation.</li>
+        <li><strong>General Knowledge & Current Affairs:</strong> National/international news, history, geography, economy, sports, awards, hospitality industry updates.</li>
+        <li><strong>Aptitude for Service Sector:</strong> Situational judgement in hospitality, ethics, team-work, customer orientation, decision-making.</li>
       </ul>
-      <p>Exam Pattern: 200 multiple-choice questions, 3 hours duration.</p>
+      <p class="mt-4">Marking scheme: <strong>+4</strong> for correct, <strong>-1</strong> for incorrect. Duration: <strong>3 hours (CBT)</strong>.</p>
     </div>
   </section>
 
-  <!-- Books Section -->
-  <section id="books" class="books-section">
-    <div class="container">
-      <h2>Recommended Books & Resources</h2>
-      <div class="books-grid">
-        <div class="book-card">
-          <img src="https://via.placeholder.com/200x250?text=NCHMCT+Book+1" alt="Book 1">
-          <h3>Book 1</h3>
-        </div>
-        <div class="book-card">
-          <img src="https://via.placeholder.com/200x250?text=NCHMCT+Book+2" alt="Book 2">
-          <h3>Book 2</h3>
-        </div>
-        <div class="book-card">
-          <img src="https://via.placeholder.com/200x250?text=NCHMCT+Book+3" alt="Book 3">
-          <h3>Book 3</h3>
-        </div>
+  <!-- Books -->
+  <section id="books" class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="section-title">Recommended Books</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="https://amzn.in/d/8waaXIu" target="_blank" class="card hover:shadow-lg">
+          <img src="assets/gallery/book1.png" alt="NCHMCT JEE Guide" class="rounded-xl mb-4 w-full h-64 object-cover"/>
+          <h3 class="font-semibold text-lg">NCHMCT JEE Guide</h3>
+        </a>
+        <a href="https://amzn.in/d/eanIpua" target="_blank" class="card hover:shadow-lg">
+          <img src="assets/gallery/book2.png" alt="Hotel Management Entrance Prep" class="rounded-xl mb-4 w-full h-64 object-cover"/>
+          <h3 class="font-semibold text-lg">Hotel Management Entrance Prep</h3>
+        </a>
+        <a href="https://amzn.in/d/6nn6ST4" target="_blank" class="card hover:shadow-lg">
+          <img src="assets/gallery/book3.png" alt="Aptitude for Service Sector" class="rounded-xl mb-4 w-full h-64 object-cover"/>
+          <h3 class="font-semibold text-lg">Aptitude for Service Sector</h3>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Courses & Admission Section -->
-  <section id="courses" class="courses-section">
-    <div class="container">
-      <h2>Courses & Admissions</h2>
-      <p>We provide detailed guidance on courses related to Hotel Management.</p>
-      <p>If anyone needs urgent admission, we provide direct assistance for fast enrolment in courses.</p>
-      <div class="courses-grid">
-        <div class="course-card">
-          <h3>Bachelor of Hotel Management</h3>
-        </div>
-        <div class="course-card">
-          <h3>Diploma in Hospitality Management</h3>
-        </div>
-        <div class="course-card">
-          <h3>Advanced Culinary Course</h3>
-        </div>
+  <!-- Colleges -->
+  <section id="colleges" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="section-title">IHM Colleges in India</h2>
+      <p class="text-sm text-gray-600 mb-6">Note: Seats/fees/hostel/placements vary by year. Verify on the official website before applying.</p>
+
+      <!-- Controls -->
+      <div class="grid md:grid-cols-4 gap-4 mb-6">
+        <input id="searchInput" type="text" placeholder="Search by college or city..." class="input" />
+        <select id="catFilter" class="input">
+          <option value="">All Categories</option>
+          <option value="Central">Central IHMs</option>
+          <option value="State">State IHMs</option>
+        </select>
+        <select id="stateFilter" class="input">
+          <option value="">All States/UTs</option>
+          <option>Andhra Pradesh</option><option>Assam</option><option>Bihar</option><option>Chandigarh</option><option>Chhattisgarh</option><option>Delhi</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jammu & Kashmir</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Meghalaya</option><option>Nagaland</option><option>Odisha</option><option>Puducherry</option><option>Punjab</option><option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option><option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option>
+        </select>
+        <button id="resetFilters" class="btn-dark">Reset Filters</button>
+      </div>
+
+      <div class="overflow-x-auto border rounded-2xl">
+        <table id="collegeTable" class="table-auto w-full">
+          <thead class="bg-gray-200 text-left text-sm">
+            <tr>
+              <th class="th sortable" data-key="name">Institute</th>
+              <th class="th sortable" data-key="cat">Category</th>
+              <th class="th sortable" data-key="state">City/State</th>
+              <th class="th">Contact</th>
+              <th class="th">Website</th>
+              <th class="th sortable" data-key="seats" data-type="num">Seats (approx)</th>
+              <th class="th">Fees (approx)</th>
+              <th class="th">Hostel</th>
+              <th class="th">Placement Notes</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm">
+            <!-- Central IHMs (sample) -->
+            <tr data-cat="Central" data-state="Delhi">
+              <td data-name>IHM Pusa (New Delhi)</td>
+              <td data-cat>Central</td>
+              <td data-state>New Delhi, Delhi</td>
+              <td>011-25841411</td>
+              <td><a href="https://ihmpusa.net/" target="_blank" class="alink">ihmpusa.net</a></td>
+              <td data-seats>300</td>
+              <td>₹50K–₹4L</td>
+              <td>₹90K–₹1.5L</td>
+              <td>~95% placement; strong brands</td>
+            </tr>
+            <tr data-cat="Central" data-state="Maharashtra">
+              <td data-name>IHM Mumbai</td>
+              <td data-cat>Central</td>
+              <td data-state>Mumbai, Maharashtra</td>
+              <td>022-24457241</td>
+              <td><a href="https://ihmctan.edu/" target="_blank" class="alink">ihmctan.edu</a></td>
+              <td data-seats>300</td>
+              <td>₹60K–₹3L</td>
+              <td>Available</td>
+              <td>Strong industry network</td>
+            </tr>
+            <tr data-cat="Central" data-state="Telangana">
+              <td data-name>IHM Hyderabad</td>
+              <td data-cat>Central</td>
+              <td data-state>Hyderabad, Telangana</td>
+              <td>040-27521007</td>
+              <td><a href="https://ihmhyd.org/" target="_blank" class="alink">ihmhyd.org</a></td>
+              <td data-seats>230</td>
+              <td>₹55K–₹2.8L</td>
+              <td>Available</td>
+              <td>~90% placement</td>
+            </tr>
+            <tr data-cat="Central" data-state="Karnataka">
+              <td data-name>IHM Bengaluru</td>
+              <td data-cat>Central</td>
+              <td data-state>Bengaluru, Karnataka</td>
+              <td>080-25504832</td>
+              <td><a href="https://ihmbengaluru.edu.in/" target="_blank" class="alink">ihmbengaluru.edu.in</a></td>
+              <td data-seats>230</td>
+              <td>—</td>
+              <td>Available</td>
+              <td>Urban hospitality hub</td>
+            </tr>
+            <!-- State IHMs (sample) -->
+            <tr data-cat="State" data-state="Delhi">
+              <td data-name>Delhi Institute of Hotel Management (DIHM)</td>
+              <td data-cat>State</td>
+              <td data-state>New Delhi, Delhi</td>
+              <td>011-28520922</td>
+              <td><a href="https://dihm.delhi.gov.in/" target="_blank" class="alink">dihm.delhi.gov.in</a></td>
+              <td data-seats>—</td>
+              <td>—</td>
+              <td>Available</td>
+              <td>NCR exposure</td>
+            </tr>
+            <tr data-cat="State" data-state="Rajasthan">
+              <td data-name>SIHM Udaipur</td>
+              <td data-cat>State</td>
+              <td data-state>Udaipur, Rajasthan</td>
+              <td>0294-2980077</td>
+              <td><a href="https://sihmudaipur.edu.in/" target="_blank" class="alink">sihmudaipur.edu.in</a></td>
+              <td data-seats>—</td>
+              <td>—</td>
+              <td>Available</td>
+              <td>Tourist city advantage</td>
+            </tr>
+            <tr data-cat="State" data-state="Uttarakhand">
+              <td data-name>IHM Dehradun</td>
+              <td data-cat>State</td>
+              <td data-state>Dehradun, Uttarakhand</td>
+              <td>0135-2773980</td>
+              <td><a href="https://ihmddn.com/" target="_blank" class="alink">ihmddn.com</a></td>
+              <td data-seats>—</td>
+              <td>—</td>
+              <td>Available</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <!-- Counselling Section -->
-  <section id="counselling" class="counselling-section">
-    <div class="container">
-      <h2>Counselling & Guidance</h2>
-      <p>If you need full guidance for NCHMCT exam preparation, counselling, or mentorship, we provide personal support and resources to help you succeed.</p>
+  <!-- Gallery -->
+  <section id="gallery" class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="section-title">Gallery</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/gallery/students1.jpg" alt="Students" class="rounded-xl" /></div>
+          <div class="swiper-slide"><img src="assets/gallery/class1.jpg" alt="Classroom" class="rounded-xl" /></div>
+          <div class="swiper-slide"><img src="assets/gallery/books1.jpg" alt="Books" class="rounded-xl" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <p class="text-xs text-gray-500 mt-3">Tip: Replace these placeholder images with your IHM Bengaluru & other college photos in <code>/assets/gallery</code>.</p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2>Contact via Telegram</h2>
-      <p>Click the button below to join our Telegram channel for instant support:</p>
-      <a href="https://t.me/+JPFyEztvXDE5OGVl" class="btn" target="_blank">Join Telegram Channel</a>
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="section-title">Contact Us</h2>
+      <form id="contactForm" class="space-y-4">
+        <input id="name" type="text" placeholder="Your Name" class="input w-full" required />
+        <input id="email" type="email" placeholder="Your Email" class="input w-full" required />
+        <textarea id="message" placeholder="Your Message" class="input w-full h-32" required></textarea>
+        <div class="flex gap-3">
+          <button type="submit" class="btn-primary">Send Message</button>
+          <button type="button" id="mailtoBtn" class="btn-outline">Send via Email</button>
+        </div>
+        <p class="text-xs text-gray-500">Telegram Bot optional: set your <code>BOT_TOKEN</code> and <code>CHAT_ID</code> in <code>script.js</code>.</p>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 NCHMCT Exam Help | Developed by Harsh</p>
-    </div>
+  <footer class="py-6 bg-gray-800 text-white text-center">
+    <p>© <span id="year"></span> NCHMCT Exam Help | Developed by Harsh</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+
+  <script type="application/ld+json">
+  {
+   "@context":"https://schema.org",
+   "@type":"FAQPage",
+   "mainEntity":[
+     {
+       "@type":"Question",
+       "name":"What is NCHMCT JEE?",
+       "acceptedAnswer":{
+         "@type":"Answer",
+         "text":"NCHMCT JEE is a computer-based national entrance exam (200 objective questions, CBT, –1 marking) for admission into IHMs across India."
+       }
+     },
+     {
+       "@type":"Question",
+       "name":"What are the approximate fees & hostel charges at IHM Pusa?",
+       "acceptedAnswer":{
+         "@type":"Answer",
+         "text":"Tuition fee ranges from ₹50 K to ₹4 L depending on the program; hostel with mess costs ₹90 K to ₹1.5 L per year."
+       }
+     },
+     {
+       "@type":"Question",
+       "name":"How good are placements at IHM Pusa?",
+       "acceptedAnswer":{
+         "@type":"Answer",
+         "text":"Placement rate ~95%; average package ₹3.8 L; highest package up to ₹9 L."
+       }
+     }
+   ]
+  }
+  </script>
 </body>
 </html>
